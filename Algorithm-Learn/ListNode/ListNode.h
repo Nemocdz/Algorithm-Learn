@@ -17,16 +17,16 @@ typedef struct ListNode ListNode;
 typedef int ValueType;
 
 ListNode *list_create(void);
-int list_isEmpty(ListNode *List);
-int list_isLast(ListNode *P,ListNode *List);
-ListNode *list_find(ValueType X, ListNode *List);
-ListNode *list_findPrevious(ValueType X, ListNode *List);
-void list_delete (ValueType X, ListNode *List);
-void list_insert(ValueType X, ListNode *List, ListNode *P);
-void list_makeEmpty(ListNode *List);
+int list_isEmpty(ListNode *list);
+int list_isLast(ListNode *P,ListNode *list);
+ListNode *list_find(ValueType x, ListNode *list);
+ListNode *list_findPrevious(ValueType x, ListNode *list);
+void list_delete (ValueType x, ListNode *list);
+void list_insert(ValueType x, ListNode *list, ListNode *p);
+void list_makeEmpty(ListNode *list);
 ListNode *list_first(ListNode *list);
-ListNode *list_next(ListNode *P);
-ValueType list_value(ListNode *P);
+ListNode *list_next(ListNode *p);
+ValueType list_value(ListNode *p);
 
 #endif /* ListNode_h */
 

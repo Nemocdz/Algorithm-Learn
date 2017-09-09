@@ -8,11 +8,6 @@
 
 #include "Stack-ListNode.h"
 
-//struct ListNode {
-//    ValueType Value;
-//    ListNode *Next;
-//};
-
 
 ListStack lstack_create(){
     ListStack stack = list_create();
@@ -21,33 +16,33 @@ ListStack lstack_create(){
 }
 
 
-int lstack_isEmpty(ListStack Stack){
-    return list_isEmpty(Stack);
+int lstack_isEmpty(ListStack stack){
+    return list_isEmpty(stack);
 }
 
-void lstack_makeEmpty(ListStack Stack){
-    if (Stack != NULL) {
-        while (!lstack_isEmpty(Stack)) {
-            lstack_pop(Stack);
+void lstack_makeEmpty(ListStack stack){
+    if (stack != NULL) {
+        while (!lstack_isEmpty(stack)) {
+            lstack_pop(stack);
         }
     }
 }
 
-void lstack_push(ValueType X, ListStack Stack){
-    list_insert(X, Stack, Stack);
+void lstack_push(ValueType X, ListStack stack){
+    list_insert(X, stack, stack);
 }
 
 
-void lstack_pop(ListStack Stack){
-    if (!lstack_isEmpty(Stack)) {
-        list_delete(list_value(list_first(Stack)), Stack);
+void lstack_pop(ListStack stack){
+    if (!lstack_isEmpty(stack)) {
+        list_delete(list_value(list_first(stack)), stack);
     }
 }
 
 
-ValueType lstack_top(ListStack Stack){
-    if (!lstack_isEmpty(Stack)) {
-        return list_value(list_first(Stack));
+ValueType lstack_top(ListStack stack){
+    if (!lstack_isEmpty(stack)) {
+        return list_value(list_first(stack));
     }
     return -1;
 }

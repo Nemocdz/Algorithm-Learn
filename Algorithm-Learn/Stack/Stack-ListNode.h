@@ -15,10 +15,10 @@
 typedef struct ListNode* ListStack;
 
 ListStack lstack_create(void);
-int lstack_isEmpty(ListStack Stack);
-void lstack_makeEmpty(ListStack Stack);
-void lstack_push(ValueType X, ListStack Stack);
-void lstack_pop(ListStack Stack);
-ValueType lstack_top(ListStack Stack);
+int lstack_isEmpty(ListStack stack);
+void lstack_makeEmpty(ListStack stack);
+void lstack_push(ValueType x, ListStack stack);
+void lstack_pop(ListStack stack);
+ValueType lstack_top(ListStack stack);
 
 #endif /* Stack_ListNode_h */

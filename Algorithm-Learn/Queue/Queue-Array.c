@@ -9,60 +9,60 @@
 #include "Queue-Array.h"
 
 struct ArrayQueue {
-    int Capacity;
-    int Front;
-    int Rear;
-    int Size;
-    ValueType *Array;
+    int capacity;
+    int front;
+    int rear;
+    int size;
+    ValueType *array;
 };
 
 
-ArrayQueue aqueue_create(int MaxCapacity){
+ArrayQueue aqueue_create(int maxCapacity){
     ArrayQueue queue = malloc(sizeof(ArrayQueue));
     if (queue != NULL) {
-        queue->Array = malloc(sizeof(ValueType) * MaxCapacity);
-        queue->Capacity = MaxCapacity;
+        queue->array = malloc(sizeof(ValueType) * maxCapacity);
+        queue->capacity = maxCapacity;
         aqueue_makeEmpty(queue);
     }
     return queue;
 }
 
 int aqueue_isFull(ArrayQueue queue){
-    return queue->Size == queue->Capacity;
+    return queue->size == queue->capacity;
 }
 
 int aqueue_isEmpty(ArrayQueue queue){
-    return queue->Size == 0;
+    return queue->size == 0;
 }
 
 void aqueue_makeEmpty(ArrayQueue queue){
-    queue->Size = 0;
-    queue->Front = 1;
-    queue->Rear = 0;
+    queue->size = 0;
+    queue->front = 1;
+    queue->rear = 0;
 }
 
 void aqueue_enqueue(ValueType X, ArrayQueue queue){
     if (!aqueue_isFull(queue)) {
-        if (++queue->Rear == queue->Capacity) {
-            queue->Rear = 0;
+        if (++queue->rear == queue->capacity) {
+            queue->rear = 0;
         }
-        queue->Array[queue->Rear] = X;
-        queue->Size++;
+        queue->array[queue->rear] = X;
+        queue->size++;
     }
 }
 
 ValueType aqueue_dequeue(ArrayQueue queue){
     ValueType result = -1;
     if (!aqueue_isEmpty(queue)) {
-        result = queue->Array[queue->Front];
-        if (++queue->Front == queue->Capacity) {
-            queue->Front = 0;
+        result = queue->array[queue->front];
+        if (++queue->front == queue->capacity) {
+            queue->front = 0;
         }
-        queue->Size--;
+        queue->size--;
     }
     return result;
 }
 
 ValueType aqueue_front(ArrayQueue queue){
-    return queue->Array[queue->Front];
+    return queue->array[queue->front];
 }

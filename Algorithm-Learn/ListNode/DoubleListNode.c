@@ -13,72 +13,72 @@ typedef int ValueType;
 typedef struct DoubleListNode DoubleListNode;
 
 struct DoubleListNode {
-    ValueType Value;
-    DoubleListNode *Pre;
-    DoubleListNode *Next;
+    ValueType value;
+    DoubleListNode *pre;
+    DoubleListNode *next;
 };
 
 DoubleListNode *dlist_create(void){
     DoubleListNode *head = malloc(sizeof(DoubleListNode));
-    head->Pre = NULL;
-    head->Next = NULL;
+    head->pre = NULL;
+    head->next = NULL;
     return head;
 }
 
-int dlist_isEmpty(DoubleListNode *List){
-    return List->Next == NULL;
+int dlist_isEmpty(DoubleListNode *list){
+    return list->next == NULL;
 }
 
-int dlist_isLast(DoubleListNode *P, DoubleListNode *List){
-    return P->Next == NULL;
+int dlist_isLast(DoubleListNode *p, DoubleListNode *list){
+    return p->next == NULL;
 }
 
-DoubleListNode *dlist_find(ValueType X, DoubleListNode *List){
-    DoubleListNode *result = List -> Next;
-    while (result != List && result->Value != X) {
-        result = result->Next;
+DoubleListNode *dlist_find(ValueType x, DoubleListNode *list){
+    DoubleListNode *result = list ->next;
+    while (result != list && result->value != x) {
+        result = result->next;
     }
     return result;
 }
 
-void dlist_delete(ValueType X, DoubleListNode *List){
-    DoubleListNode *result = dlist_find(X, List);
-    result = result->Pre;
-    if (!dlist_isLast(result, List)) {
-        DoubleListNode *tmp = result->Next;
-        result->Next = tmp->Next;
+void dlist_delete(ValueType x, DoubleListNode *list){
+    DoubleListNode *result = dlist_find(x, list);
+    result = result->pre;
+    if (!dlist_isLast(result, list)) {
+        DoubleListNode *tmp = result->next;
+        result->next = tmp->next;
         free(tmp);
     }
 }
 
-void dlist_insertPre(ValueType X, DoubleListNode *List, DoubleListNode *P){
+void dlist_insertPre(ValueType x, DoubleListNode *list, DoubleListNode *p){
     DoubleListNode *tmp  = malloc(sizeof(DoubleListNode));
     if (tmp == NULL) {
         return;
     }
-    tmp->Value = X;
-    tmp->Pre = P->Pre;
-    P->Pre = tmp;
+    tmp->value = x;
+    tmp->pre = p->pre;
+    p->pre = tmp;
 }
 
-void dlist_insertNext(ValueType X, DoubleListNode *List, DoubleListNode *P){
+void dlist_insertNext(ValueType x, DoubleListNode *list, DoubleListNode *p){
     DoubleListNode *tmp  = malloc(sizeof(DoubleListNode));
     if (tmp == NULL) {
         return;
     }
-    tmp->Value = X;
-    tmp->Next = P->Next;
-    P->Next = tmp;
+    tmp->value = x;
+    tmp->next = p->next;
+    p->next = tmp;
 }
 
 
-void dlist_makeEmpty(DoubleListNode *List){
-    DoubleListNode *result = List->Next;
-    List->Next = NULL;
+void dlist_makeEmpty(DoubleListNode *list){
+    DoubleListNode *result = list->next;
+    list->next = NULL;
     while (result != NULL) {
-        DoubleListNode *tmp = result->Next;
+        DoubleListNode *tmp = result->next;
         free(result);
-        result = tmp->Next;
+        result = tmp->next;
     }
 }
 

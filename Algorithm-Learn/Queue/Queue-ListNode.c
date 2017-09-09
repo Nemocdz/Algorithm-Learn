@@ -11,8 +11,8 @@
 struct ListNode {
     ListNode *head;
     ListNode *tail;
-    ValueType Value;
-    ListNode *Next;
+    ValueType value;
+    ListNode *next;
 };
 
 ListQueue lqueue_create(void){
@@ -34,23 +34,23 @@ void lqueue_makeEmpty(ListQueue queue){
 
 void lqueue_enqueue(ValueType X, ListQueue queue){
     ListNode *node = malloc(sizeof(ListNode));
-    node->Value = X;
-    node->Next = queue->tail->Next;
-    queue->tail->Next = node;
+    node->value = X;
+    node->next = queue->tail->next;
+    queue->tail->next = node;
 }
 
 ValueType lqueue_dequeue(ListQueue queue){
    ValueType value = -1;
     if (!lqueue_isEmpty(queue)) {
         ListNode *node = list_first(queue);
-        queue->head->Next = node->Next;
-        value = node->Value;
+        queue->head->next = node->next;
+        value = node->value;
         free(node);
     }
     return value;
 }
 
 ValueType lqueue_front(ListQueue queue){
-    return list_first(queue)->Value;
+    return list_first(queue)->value;
 }
 

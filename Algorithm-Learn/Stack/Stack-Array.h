@@ -15,12 +15,12 @@
 typedef struct ArrayStack* ArrayStack;
 typedef int ValueType;
 
-ArrayStack astack_create(int MaxCapacity);
-int astack_isEmpty(ArrayStack Stack);
-int astack_isFull(ArrayStack Stack);
-void astack_makeEmpty(ArrayStack Stack);
-void astack_push(ValueType X, ArrayStack Stack);
-void astack_pop(ArrayStack Stack);
-ValueType astack_top(ArrayStack Stack);
+ArrayStack astack_create(int maxCapacity);
+int astack_isEmpty(ArrayStack stack);
+int astack_isFull(ArrayStack stack);
+void astack_makeEmpty(ArrayStack stack);
+void astack_push(ValueType x, ArrayStack stack);
+void astack_pop(ArrayStack stack);
+ValueType astack_top(ArrayStack stack);
 
 #endif /* Stack_Array_h */

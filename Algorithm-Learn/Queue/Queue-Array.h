@@ -15,11 +15,11 @@
 typedef int ValueType;
 typedef struct ArrayQueue* ArrayQueue;
 
-ArrayQueue aqueue_create(int MaxCapacity);
+ArrayQueue aqueue_create(int maxCapacity);
 int aqueue_isFull(ArrayQueue queue);
 int aqueue_isEmpty(ArrayQueue queue);
 void aqueue_makeEmpty(ArrayQueue queue);
-void aqueue_enqueue(ValueType X, ArrayQueue queue);
+void aqueue_enqueue(ValueType x, ArrayQueue queue);
 ValueType aqueue_dequeue(ArrayQueue queue);
 ValueType aqueue_front(ArrayQueue queue);
 

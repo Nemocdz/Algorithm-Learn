@@ -9,81 +9,81 @@
 #include "ListNode.h"
 
 struct ListNode {
-    ValueType Value;
-    ListNode *Next;
+    ValueType value;
+    ListNode *next;
 };
 
 ListNode *list_create(){
     ListNode *head = malloc(sizeof(ListNode));
-    head->Next = NULL;
+    head->next = NULL;
     return head;
 }
 
 
-int list_isEmpty(ListNode *List){
-    return List->Next == NULL;
+int list_isEmpty(ListNode *list){
+    return list->next == NULL;
 }
 
-int list_isLast(ListNode *P, ListNode *List){
-    return P->Next == NULL;
+int list_isLast(ListNode *p, ListNode *list){
+    return p->next == NULL;
 }
 
-ListNode *list_find(ValueType X, ListNode *List){
-    ListNode *result = List -> Next;
-    while (result != NULL && result->Value != X) {
-        result = result->Next;
+ListNode *list_find(ValueType x, ListNode *list){
+    ListNode *result = list -> next;
+    while (result != NULL && result->value != x) {
+        result = result->next;
     }
     return result;
 }
 
-ListNode *list_findPrevious(ValueType X, ListNode *List) {
-    ListNode *result = List;
-    while (result != NULL && result->Next->Value != X) {
-        result = result->Next;
+ListNode *list_findPrevious(ValueType x, ListNode *list) {
+    ListNode *result = list;
+    while (result != NULL && result->next->value != x) {
+        result = result->next;
     }
     return result;
 }
 
-void list_delete(ValueType X, ListNode *List){
-    ListNode *result = list_findPrevious(X, List);
-    if (!list_isLast(result, List)) {
-        ListNode *tmp = result->Next;
-        result->Next = tmp->Next;
+void list_delete(ValueType x, ListNode *list){
+    ListNode *result = list_findPrevious(x, list);
+    if (!list_isLast(result, list)) {
+        ListNode *tmp = result->next;
+        result->next = tmp->next;
         free(tmp);
     }
 }
 
-void list_insert(ValueType X,ListNode *List, ListNode *P){
+void list_insert(ValueType x,ListNode *list, ListNode *p){
     ListNode *tmp  = malloc(sizeof(ListNode));
     if (tmp == NULL) {
         return;
     }
-    tmp->Value = X;
-    tmp->Next = P->Next;
-    P->Next = tmp;
+    tmp->value = x;
+    tmp->next = p->next;
+    p->next = tmp;
 }
 
-void list_makeEmpty(ListNode *List){
-    ListNode *result = List->Next;
-    List->Next = NULL;
+void list_makeEmpty(ListNode *list){
+    ListNode *result = list->next;
+    list->next = NULL;
     while (result != NULL) {
-        ListNode *tmp = result->Next;
+        ListNode *tmp = result->next;
         free(result);
-        result = tmp->Next;
+        result = tmp->next;
     }
 }
 
 
 ListNode *list_first(ListNode *list){
-    return list->Next;
+    return list->next;
 }
 
-ListNode *list_next(ListNode *P){
-    return P->Next;
+ListNode *list_next(ListNode *p){
+    return p->next;
 }
 
-ValueType list_value(ListNode *P){
-    return P->Value;
+ValueType list_value(ListNode *p){
+    return p->value;
 }
 
 

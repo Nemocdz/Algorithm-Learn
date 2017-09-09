@@ -11,53 +11,53 @@
 static const int ArrayStackEmptyTop = -1;
 
 struct ArrayStack{
-    int Capacity;
-    int Top;
-    ValueType *Array;
+    int capacity;
+    int top;
+    ValueType *array;
 };
 
 
-ArrayStack astack_create(int MaxCapacity){
+ArrayStack astack_create(int maxCapacity){
     ArrayStack stack = malloc(sizeof(ArrayStack));
     if (stack != NULL) {
-        stack->Array = malloc(sizeof(ValueType) * MaxCapacity);
-        stack->Capacity = MaxCapacity;
+        stack->array = malloc(sizeof(ValueType) * maxCapacity);
+        stack->capacity = maxCapacity;
         astack_makeEmpty(stack);
     }
     return stack;
 }
 
-int astack_isEmpty(ArrayStack Stack){
-    return Stack->Top == ArrayStackEmptyTop;
+int astack_isEmpty(ArrayStack stack){
+    return stack->top == ArrayStackEmptyTop;
 }
 
-int astack_isFull(ArrayStack Stack){
-    return Stack->Top == Stack->Capacity;
+int astack_isFull(ArrayStack stack){
+    return stack->top == stack->capacity;
 }
 
-void astack_makeEmpty(ArrayStack Stack){
-    if (Stack != NULL) {
-        Stack->Top = ArrayStackEmptyTop;
-        free(Stack->Array);
-        Stack->Array = malloc(sizeof(ValueType) * Stack->Capacity);
+void astack_makeEmpty(ArrayStack stack){
+    if (stack != NULL) {
+        stack->top = ArrayStackEmptyTop;
+        free(stack->array);
+        stack->array = malloc(sizeof(ValueType) * stack->capacity);
     }
 }
 
-void astack_push(ValueType X, ArrayStack Stack){
-    if (!astack_isFull(Stack)) {
-        Stack->Array[++Stack->Top] = X;
+void astack_push(ValueType x, ArrayStack stack){
+    if (!astack_isFull(stack)) {
+        stack->array[++stack->top] = x;
     }
 }
 
-void astack_pop(ArrayStack Stack){
-    if (!astack_isEmpty(Stack)) {
-        Stack->Top--;
+void astack_pop(ArrayStack stack){
+    if (!astack_isEmpty(stack)) {
+        stack->top--;
     }
 }
 
 ValueType astack_top(ArrayStack Stack){
     if (!astack_isEmpty(Stack)) {
-        return Stack->Array[Stack->Top];
+        return Stack->array[Stack->top];
     }
     return -1;
 }

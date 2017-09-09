@@ -14,6 +14,7 @@
 		DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CAD1F61824A001B08AF /* Stack-Array.c */; };
 		DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB01F61877E001B08AF /* Queue-ListNode.c */; };
 		DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB41F61910C001B08AF /* Queue-Array.c */; };
+		DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548861F63C396004DEFC5 /* SearchTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,8 @@
 		DA282CB11F61877E001B08AF /* Queue-ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-ListNode.h"; sourceTree = "<group>"; };
 		DA282CB41F61910C001B08AF /* Queue-Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Queue-Array.c"; sourceTree = "<group>"; };
 		DA282CB51F61910C001B08AF /* Queue-Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-Array.h"; sourceTree = "<group>"; };
+		DA7548861F63C396004DEFC5 /* SearchTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SearchTree.c; path = "Algorithm-Learn/Tree/SearchTree.c"; sourceTree = SOURCE_ROOT; };
+		DA7548871F63C396004DEFC5 /* SearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SearchTree.h; path = "Algorithm-Learn/Tree/SearchTree.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 			children = (
 				DA282CA11F616D5A001B08AF /* ListNode */,
 				DA282C9E1F616D1F001B08AF /* Stack */,
+				DA7548891F63C3A1004DEFC5 /* Tree */,
 				DA282CB31F6190F1001B08AF /* Queue */,
 				DA282C8C1F616CBB001B08AF /* main.c */,
 			);
@@ -114,6 +118,15 @@
 				DA282CB41F61910C001B08AF /* Queue-Array.c */,
 			);
 			path = Queue;
+			sourceTree = "<group>";
+		};
+		DA7548891F63C3A1004DEFC5 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				DA7548871F63C396004DEFC5 /* SearchTree.h */,
+				DA7548861F63C396004DEFC5 /* SearchTree.c */,
+			);
+			path = Tree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +189,7 @@
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,
+				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
 				DA282CA41F617388001B08AF /* Stack-ListNode.c in Sources */,
 				DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */,
 				DA282C981F616CD7001B08AF /* ListNode.c in Sources */,

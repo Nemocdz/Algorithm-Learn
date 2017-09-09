@@ -17,13 +17,13 @@ typedef struct DoubleListNode DoubleListNode;
 typedef int ValueType;
 
 DoubleListNode *dlist_create(void);
-int dlist_sEmpty(DoubleListNode *List);
-int dlist_isLast(DoubleListNode *P,DoubleListNode *List);
-DoubleListNode *dlist_find(ValueType X, DoubleListNode *List);
-void dlist_delete (ValueType X, DoubleListNode *List);
-void dlist_insertPre(ValueType X, DoubleListNode *List, DoubleListNode *P);
-void dlist_insertNext(ValueType X, DoubleListNode *List, DoubleListNode *P);
-void dlist_makeEmpty(DoubleListNode *List);
+int dlist_isEmpty(DoubleListNode *list);
+int dlist_isLast(DoubleListNode *p,DoubleListNode *list);
+DoubleListNode *dlist_find(ValueType x, DoubleListNode *list);
+void dlist_delete (ValueType x, DoubleListNode *list);
+void dlist_insertPre(ValueType x, DoubleListNode *list, DoubleListNode *p);
+void dlist_insertNext(ValueType x, DoubleListNode *list, DoubleListNode *p);
+void dlist_makeEmpty(DoubleListNode *list);
 
 
 #endif /* DoubleDoubleListNode_h */
