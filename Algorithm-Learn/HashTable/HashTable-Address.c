@@ -7,3 +7,24 @@
 //
 
 #include "HashTable-Address.h"
+
+typedef enum InfoType {
+    infoEmpty,
+    infoUse,
+    infoDelete
+} InfoType;
+
+typedef struct HashItem {
+    KeyType key;
+    InfoType info;
+} HashItem;
+
+struct AddressHashTable {
+    int capacity;
+    HashItem *items;
+};
+
+
+
+
+

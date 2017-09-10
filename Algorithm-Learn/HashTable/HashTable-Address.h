@@ -11,6 +11,16 @@
 
 #include <stdio.h>
 
+typedef struct AddressHashTable* AddressHashTable;
+typedef char KeyType;
+typedef unsigned int Index;
+
+AddressHashTable ahashtable_create(int maxCapacity);
+void ahashtable_makeEmpty(AddressHashTable table);
+Index lhashtable_find(KeyType key, AddressHashTable table);
+void lhashtable_insert(KeyType key, AddressHashTable table);
+KeyType lhashtable_retrieve(Index i, AddressHashTable table);
+AddressHashTable lhashtable_rehash(AddressHashTable table);
 
 
 #endif /* HashTable_Address_h */
