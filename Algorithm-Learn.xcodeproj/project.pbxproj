@@ -15,6 +15,7 @@
 		DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB01F61877E001B08AF /* Queue-ListNode.c */; };
 		DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB41F61910C001B08AF /* Queue-Array.c */; };
 		DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548861F63C396004DEFC5 /* SearchTree.c */; };
+		DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488A1F6407CF004DEFC5 /* AVLTree.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		DA282CB51F61910C001B08AF /* Queue-Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-Array.h"; sourceTree = "<group>"; };
 		DA7548861F63C396004DEFC5 /* SearchTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SearchTree.c; path = "Algorithm-Learn/Tree/SearchTree.c"; sourceTree = SOURCE_ROOT; };
 		DA7548871F63C396004DEFC5 /* SearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SearchTree.h; path = "Algorithm-Learn/Tree/SearchTree.h"; sourceTree = SOURCE_ROOT; };
+		DA75488A1F6407CF004DEFC5 /* AVLTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AVLTree.c; sourceTree = "<group>"; };
+		DA75488B1F6407CF004DEFC5 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +128,8 @@
 			children = (
 				DA7548871F63C396004DEFC5 /* SearchTree.h */,
 				DA7548861F63C396004DEFC5 /* SearchTree.c */,
+				DA75488B1F6407CF004DEFC5 /* AVLTree.h */,
+				DA75488A1F6407CF004DEFC5 /* AVLTree.c */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,

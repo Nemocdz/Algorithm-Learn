@@ -78,9 +78,33 @@ SearchTree searchtree_insert(ValueType x,SearchTree tree){
 }
 
 SearchTree searchtree_delete(ValueType x,SearchTree tree){
-    
+    TreeNode *tmp = NULL;
+    if (tree != NULL) {
+        if (x < tree->value) {
+            tree->left = searchtree_delete(x, tree->left);
+        }
+        else if (x > tree->value){
+            tree->right = searchtree_delete(x, tree->right);
+        }
+        else if (tree->left && tree->right){
+            tmp = searchtree_findMin(tree->right);
+            tree->value = tmp->value;
+            tree->right = searchtree_delete(tree->value, tree->right);
+        }
+        else{
+            tmp = tree;
+            if (tree->left == NULL) {
+                tree = tree->right;
+            }
+            else if (tree->right == NULL){
+                tree = tree->left;
+            }
+            free(tmp);
+        }
+    }
+    return tree;
 }
 
 ValueType searchtree_retrieve(TreeNode *p){
-    
+    return p->value;
 }
