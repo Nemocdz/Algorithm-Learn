@@ -13,7 +13,7 @@ struct ListNode {
     ListNode *next;
 };
 
-struct HashTable {
+struct LinkHashTable {
     int capacity;
     ListNode **list;
 };
@@ -44,8 +44,8 @@ static int nextPrime (int n) {
     }
 }
 
-HashTable hashtable_create(int maxCapacity){
-    HashTable table = malloc(sizeof(HashTable));
+LinkHashTable lhashtable_create(int maxCapacity){
+    LinkHashTable table = malloc(sizeof(LinkHashTable));
     table->capacity = nextPrime(maxCapacity);
     table->list = malloc(sizeof(ListNode *) * table->capacity);
     for (int i = 0; i < table->capacity; i++) {
@@ -54,7 +54,7 @@ HashTable hashtable_create(int maxCapacity){
     return table;
 }
 
-void hashtable_makeEmpty(HashTable table){
+void lhashtable_makeEmpty(LinkHashTable table){
     for (int i = 0; i < table->capacity ; i++) {
         ListNode *list = table->list[i];
         ListNode *result = list->next;
@@ -66,7 +66,7 @@ void hashtable_makeEmpty(HashTable table){
     }
 }
 
-ListNode *hashtable_find(KeyType key, HashTable table){
+ListNode *lhashtable_find(KeyType key, LinkHashTable table){
     ListNode *list = table->list[hash(&key, table->capacity)];
     ListNode *node = list->next;
     while (node != NULL && strcmp(&node->value, &key)) {
@@ -75,8 +75,8 @@ ListNode *hashtable_find(KeyType key, HashTable table){
     return node;
 }
 
-void hashtable_insert(KeyType key, HashTable table){
-    ListNode *node = hashtable_find(key, table);
+void lhashtable_insert(KeyType key, LinkHashTable table){
+    ListNode *node = lhashtable_find(key, table);
     if (node == NULL) {
         ListNode *new = malloc(sizeof(ListNode *));
         new->value = key;
@@ -86,6 +86,6 @@ void hashtable_insert(KeyType key, HashTable table){
     }
 }
 
-KeyType hashtable_retrieve(ListNode *p){
+KeyType lhashtable_retrieve(ListNode *p){
     return p->value;
 }

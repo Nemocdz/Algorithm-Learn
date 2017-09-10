@@ -17,6 +17,7 @@
 		DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548861F63C396004DEFC5 /* SearchTree.c */; };
 		DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488A1F6407CF004DEFC5 /* AVLTree.c */; };
 		DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */; };
+		DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548911F6577EA004DEFC5 /* HashTable-Address.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +53,8 @@
 		DA75488B1F6407CF004DEFC5 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
 		DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "HashTable-Link.c"; path = "Algorithm-Learn/HashTable/HashTable-Link.c"; sourceTree = SOURCE_ROOT; };
 		DA75488E1F652EC2004DEFC5 /* HashTable-Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HashTable-Link.h"; path = "Algorithm-Learn/HashTable/HashTable-Link.h"; sourceTree = SOURCE_ROOT; };
+		DA7548911F6577EA004DEFC5 /* HashTable-Address.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "HashTable-Address.c"; sourceTree = "<group>"; };
+		DA7548921F6577EA004DEFC5 /* HashTable-Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HashTable-Address.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 			children = (
 				DA75488E1F652EC2004DEFC5 /* HashTable-Link.h */,
 				DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */,
+				DA7548921F6577EA004DEFC5 /* HashTable-Address.h */,
+				DA7548911F6577EA004DEFC5 /* HashTable-Address.c */,
 			);
 			path = HashTable;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
+				DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */,
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,
 				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
 				DA282CA41F617388001B08AF /* Stack-ListNode.c in Sources */,

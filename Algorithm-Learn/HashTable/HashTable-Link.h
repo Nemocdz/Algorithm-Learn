@@ -14,15 +14,13 @@
 #include <string.h>
 #include "ListNode.h"
 
-typedef struct HashTable* HashTable;
+typedef struct LinkHashTable *LinkHashTable;
 typedef char KeyType;
 
-HashTable hashtable_create(int maxCapacity);
-void hashtable_makeEmpty(HashTable table);
-ListNode *hashtable_find(KeyType key, HashTable table);
-void hashtable_insert(KeyType key, HashTable table);
-KeyType hashtable_retrieve(ListNode *p);
-
-
+LinkHashTable lhashtable_create(int maxCapacity);
+void lhashtable_makeEmpty(LinkHashTable table);
+ListNode *lhashtable_find(KeyType key, LinkHashTable table);
+void lhashtable_insert(KeyType key, LinkHashTable table);
+KeyType lhashtable_retrieve(ListNode *p);
 
 #endif /* HashTable_Link_h */
