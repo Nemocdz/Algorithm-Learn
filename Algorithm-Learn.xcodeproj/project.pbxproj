@@ -16,6 +16,7 @@
 		DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB41F61910C001B08AF /* Queue-Array.c */; };
 		DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548861F63C396004DEFC5 /* SearchTree.c */; };
 		DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488A1F6407CF004DEFC5 /* AVLTree.c */; };
+		DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		DA7548871F63C396004DEFC5 /* SearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SearchTree.h; path = "Algorithm-Learn/Tree/SearchTree.h"; sourceTree = SOURCE_ROOT; };
 		DA75488A1F6407CF004DEFC5 /* AVLTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AVLTree.c; sourceTree = "<group>"; };
 		DA75488B1F6407CF004DEFC5 /* AVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVLTree.h; sourceTree = "<group>"; };
+		DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = "HashTable-Link.c"; path = "Algorithm-Learn/HashTable/HashTable-Link.c"; sourceTree = SOURCE_ROOT; };
+		DA75488E1F652EC2004DEFC5 /* HashTable-Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HashTable-Link.h"; path = "Algorithm-Learn/HashTable/HashTable-Link.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 				DA282C9E1F616D1F001B08AF /* Stack */,
 				DA7548891F63C3A1004DEFC5 /* Tree */,
 				DA282CB31F6190F1001B08AF /* Queue */,
+				DA7548901F652EE9004DEFC5 /* HashTable */,
 				DA282C8C1F616CBB001B08AF /* main.c */,
 			);
 			path = "Algorithm-Learn";
@@ -132,6 +136,15 @@
 				DA75488A1F6407CF004DEFC5 /* AVLTree.c */,
 			);
 			path = Tree;
+			sourceTree = "<group>";
+		};
+		DA7548901F652EE9004DEFC5 /* HashTable */ = {
+			isa = PBXGroup;
+			children = (
+				DA75488E1F652EC2004DEFC5 /* HashTable-Link.h */,
+				DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */,
+			);
+			path = HashTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */,
 				DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
