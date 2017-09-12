@@ -18,6 +18,7 @@
 		DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488A1F6407CF004DEFC5 /* AVLTree.c */; };
 		DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */; };
 		DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548911F6577EA004DEFC5 /* HashTable-Address.c */; };
+		DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */ = {isa = PBXBuildFile; fileRef = DAA61E631F67DC2300431A3A /* BinaryHeap.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +56,8 @@
 		DA75488E1F652EC2004DEFC5 /* HashTable-Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HashTable-Link.h"; path = "Algorithm-Learn/HashTable/HashTable-Link.h"; sourceTree = SOURCE_ROOT; };
 		DA7548911F6577EA004DEFC5 /* HashTable-Address.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "HashTable-Address.c"; sourceTree = "<group>"; };
 		DA7548921F6577EA004DEFC5 /* HashTable-Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HashTable-Address.h"; sourceTree = "<group>"; };
+		DAA61E631F67DC2300431A3A /* BinaryHeap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = BinaryHeap.c; path = "Algorithm-Learn/Heap/BinaryHeap.c"; sourceTree = SOURCE_ROOT; };
+		DAA61E641F67DC2300431A3A /* BinaryHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryHeap.h; path = "Algorithm-Learn/Heap/BinaryHeap.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 				DA7548891F63C3A1004DEFC5 /* Tree */,
 				DA282CB31F6190F1001B08AF /* Queue */,
 				DA7548901F652EE9004DEFC5 /* HashTable */,
+				DAA61E661F67DC2700431A3A /* Heap */,
 				DA282C8C1F616CBB001B08AF /* main.c */,
 			);
 			path = "Algorithm-Learn";
@@ -150,6 +154,15 @@
 				DA7548911F6577EA004DEFC5 /* HashTable-Address.c */,
 			);
 			path = HashTable;
+			sourceTree = "<group>";
+		};
+		DAA61E661F67DC2700431A3A /* Heap */ = {
+			isa = PBXGroup;
+			children = (
+				DAA61E641F67DC2300431A3A /* BinaryHeap.h */,
+				DAA61E631F67DC2300431A3A /* BinaryHeap.c */,
+			);
+			path = Heap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +230,7 @@
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,
 				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
 				DA282CA41F617388001B08AF /* Stack-ListNode.c in Sources */,
+				DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */,
 				DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */,
 				DA282C981F616CD7001B08AF /* ListNode.c in Sources */,
 				DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */,

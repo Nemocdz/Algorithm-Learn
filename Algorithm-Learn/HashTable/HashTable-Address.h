@@ -20,10 +20,10 @@ typedef unsigned int Index;
 
 AddressHashTable ahashtable_create(int maxCapacity);
 void ahashtable_makeEmpty(AddressHashTable table);
-Index lhashtable_find(KeyType key, AddressHashTable table);
-void lhashtable_insert(KeyType key, AddressHashTable table);
-KeyType lhashtable_retrieve(Index i, AddressHashTable table);
-AddressHashTable lhashtable_rehash(AddressHashTable table);
+Index ahashtable_find(KeyType key, AddressHashTable table);
+void ahashtable_insert(KeyType key, AddressHashTable table);
+KeyType ahashtable_retrieve(Index i, AddressHashTable table);
+AddressHashTable ahashtable_rehash(AddressHashTable table);
 
 
 #endif /* HashTable_Address_h */
