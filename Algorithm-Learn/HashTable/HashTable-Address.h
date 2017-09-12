@@ -10,6 +10,9 @@
 #define HashTable_Address_h
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <stdbool.h>
 
 typedef struct AddressHashTable* AddressHashTable;
 typedef char KeyType;
