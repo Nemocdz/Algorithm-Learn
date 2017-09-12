@@ -36,22 +36,50 @@ int binaryheap_isEmpty(BinaryHeap heap){
 }
 
 void binaryheap_makeEmpty(BinaryHeap heap){
-    
+    heap->size = 0;
 }
 
 void binaryheap_insert(ValueType x,BinaryHeap heap){
     if (!binaryheap_isFull(heap)) {
         int i;
         //先从插入的地方往父节点比较，若x小则将父节点往下移动，最后找到父节点比x小的位置填上x
-        for (i = heap->size; heap->items[i/2] > x; i /= 2) {
+        for (i = ++heap->size; heap->items[i/2] > x; i /= 2) {
             heap->items[i] = heap->items[i/2];
         }
         heap->items[i] = x;
-        heap->size++;
     }
 }
 
-ValueType deleteMin(BinaryHeap heap);
+ValueType deleteMin(BinaryHeap heap){
+    if (binaryheap_isEmpty(heap)) {
+        return MinData;
+    }
+    else{
+        int i,child;
+        ValueType min = heap->items[1];
+        //将最后一个值移到正确位置
+        ValueType last = heap->items[heap->size--];
+        //最顶的值准备置空，每次下移一层比较
+        for (i = 1; i * 2 <= heap->size; i = child) {
+            //计算子节点位置
+            child = i * 2;
+            //有两个子节点的情况下，取小的
+            if (child != heap->size && heap->items[child+1] < heap->items[child]) {
+                child++;
+            }
+            //若last大则空穴下移，填字节的值
+            if (last > heap->items[child]) {
+                heap->items[i] = heap->items[child];
+            }
+            else{
+                break;
+            }
+        }
+        //在合适位置填入最后一个值
+        heap->items[i] = last;
+        return min;
+    }
+}
 
 ValueType findMin(BinaryHeap heap){
     if (!binaryheap_isEmpty(heap)) {
