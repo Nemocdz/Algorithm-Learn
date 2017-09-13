@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CAF1F69181800C2E250 /* SelectionSort.c */; };
+		DA255CB31F6919F900C2E250 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB21F6919F900C2E250 /* BubbleSort.c */; };
+		DA255CB51F691C7000C2E250 /* HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB41F691C7000C2E250 /* HeapSort.c */; };
+		DA255CB71F69290B00C2E250 /* MergeSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB61F69290B00C2E250 /* MergeSort.c */; };
 		DA282C8D1F616CBB001B08AF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282C8C1F616CBB001B08AF /* main.c */; };
 		DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282C951F616CD7001B08AF /* DoubleListNode.c */; };
 		DA282C981F616CD7001B08AF /* ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282C961F616CD7001B08AF /* ListNode.c */; };
@@ -14,10 +18,12 @@
 		DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CAD1F61824A001B08AF /* Stack-Array.c */; };
 		DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB01F61877E001B08AF /* Queue-ListNode.c */; };
 		DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB41F61910C001B08AF /* Queue-Array.c */; };
+		DA59BC8F1F6910FD0009FB0D /* ShellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA59BC8E1F6910FD0009FB0D /* ShellSort.c */; };
 		DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548861F63C396004DEFC5 /* SearchTree.c */; };
 		DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488A1F6407CF004DEFC5 /* AVLTree.c */; };
 		DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */; };
 		DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548911F6577EA004DEFC5 /* HashTable-Address.c */; };
+		DA9CA1011F690B8E0067C359 /* InsertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA9CA1001F690B8E0067C359 /* InsertionSort.c */; };
 		DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */ = {isa = PBXBuildFile; fileRef = DAA61E631F67DC2300431A3A /* BinaryHeap.c */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +40,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA255CAF1F69181800C2E250 /* SelectionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelectionSort.c; sourceTree = "<group>"; };
+		DA255CB21F6919F900C2E250 /* BubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BubbleSort.c; sourceTree = "<group>"; };
+		DA255CB41F691C7000C2E250 /* HeapSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HeapSort.c; sourceTree = "<group>"; };
+		DA255CB61F69290B00C2E250 /* MergeSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MergeSort.c; sourceTree = "<group>"; };
 		DA282C891F616CBB001B08AF /* Algorithm-Learn */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Algorithm-Learn"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA282C8C1F616CBB001B08AF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		DA282C951F616CD7001B08AF /* DoubleListNode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DoubleListNode.c; sourceTree = "<group>"; };
@@ -48,6 +58,7 @@
 		DA282CB11F61877E001B08AF /* Queue-ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-ListNode.h"; sourceTree = "<group>"; };
 		DA282CB41F61910C001B08AF /* Queue-Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Queue-Array.c"; sourceTree = "<group>"; };
 		DA282CB51F61910C001B08AF /* Queue-Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-Array.h"; sourceTree = "<group>"; };
+		DA59BC8E1F6910FD0009FB0D /* ShellSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShellSort.c; sourceTree = "<group>"; };
 		DA7548861F63C396004DEFC5 /* SearchTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SearchTree.c; path = "Algorithm-Learn/Tree/SearchTree.c"; sourceTree = SOURCE_ROOT; };
 		DA7548871F63C396004DEFC5 /* SearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SearchTree.h; path = "Algorithm-Learn/Tree/SearchTree.h"; sourceTree = SOURCE_ROOT; };
 		DA75488A1F6407CF004DEFC5 /* AVLTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AVLTree.c; sourceTree = "<group>"; };
@@ -56,6 +67,7 @@
 		DA75488E1F652EC2004DEFC5 /* HashTable-Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "HashTable-Link.h"; path = "Algorithm-Learn/HashTable/HashTable-Link.h"; sourceTree = SOURCE_ROOT; };
 		DA7548911F6577EA004DEFC5 /* HashTable-Address.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "HashTable-Address.c"; sourceTree = "<group>"; };
 		DA7548921F6577EA004DEFC5 /* HashTable-Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HashTable-Address.h"; sourceTree = "<group>"; };
+		DA9CA1001F690B8E0067C359 /* InsertionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = InsertionSort.c; path = "Algorithm-Learn/Sort/InsertionSort.c"; sourceTree = SOURCE_ROOT; };
 		DAA61E631F67DC2300431A3A /* BinaryHeap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = BinaryHeap.c; path = "Algorithm-Learn/Heap/BinaryHeap.c"; sourceTree = SOURCE_ROOT; };
 		DAA61E641F67DC2300431A3A /* BinaryHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryHeap.h; path = "Algorithm-Learn/Heap/BinaryHeap.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -75,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				DA282C8B1F616CBB001B08AF /* Algorithm-Learn */,
+				DA282C8C1F616CBB001B08AF /* main.c */,
 				DA282C8A1F616CBB001B08AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +109,7 @@
 				DA282CB31F6190F1001B08AF /* Queue */,
 				DA7548901F652EE9004DEFC5 /* HashTable */,
 				DAA61E661F67DC2700431A3A /* Heap */,
-				DA282C8C1F616CBB001B08AF /* main.c */,
+				DA9CA1021F690B9E0067C359 /* Sort */,
 			);
 			path = "Algorithm-Learn";
 			sourceTree = "<group>";
@@ -154,6 +167,19 @@
 				DA7548911F6577EA004DEFC5 /* HashTable-Address.c */,
 			);
 			path = HashTable;
+			sourceTree = "<group>";
+		};
+		DA9CA1021F690B9E0067C359 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				DA9CA1001F690B8E0067C359 /* InsertionSort.c */,
+				DA59BC8E1F6910FD0009FB0D /* ShellSort.c */,
+				DA255CAF1F69181800C2E250 /* SelectionSort.c */,
+				DA255CB21F6919F900C2E250 /* BubbleSort.c */,
+				DA255CB41F691C7000C2E250 /* HeapSort.c */,
+				DA255CB61F69290B00C2E250 /* MergeSort.c */,
+			);
+			path = Sort;
 			sourceTree = "<group>";
 		};
 		DAA61E661F67DC2700431A3A /* Heap */ = {
@@ -223,15 +249,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */,
+				DA255CB31F6919F900C2E250 /* BubbleSort.c in Sources */,
 				DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
+				DA59BC8F1F6910FD0009FB0D /* ShellSort.c in Sources */,
+				DA255CB51F691C7000C2E250 /* HeapSort.c in Sources */,
 				DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */,
+				DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */,
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,
 				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
 				DA282CA41F617388001B08AF /* Stack-ListNode.c in Sources */,
+				DA255CB71F69290B00C2E250 /* MergeSort.c in Sources */,
 				DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */,
 				DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */,
+				DA9CA1011F690B8E0067C359 /* InsertionSort.c in Sources */,
 				DA282C981F616CD7001B08AF /* ListNode.c in Sources */,
 				DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */,
 			);
