@@ -7,8 +7,7 @@
 //
 
 #include <stdio.h>
-
-typedef int ValueType;
+#include "SortUtil.h"
 
 void selectionSort(ValueType array[],int size){
     for (int i = 0; i < size; i++) {
@@ -21,9 +20,7 @@ void selectionSort(ValueType array[],int size){
         }
         //将该位置放入最小的一个
         if (min != i) {
-            ValueType tmp = array[i];
-            array[i] = array[min];
-            array[min] = tmp;
+            swapValues(&array[i], &array[min]);
         }
     }
 }

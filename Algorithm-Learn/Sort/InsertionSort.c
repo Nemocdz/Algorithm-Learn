@@ -7,8 +7,8 @@
 //
 
 #include <stdio.h>
+#include "SortUtil.h"
 
-typedef int ValueType;
 
 void insertionSort(ValueType array[],int size){
     ValueType tmp;

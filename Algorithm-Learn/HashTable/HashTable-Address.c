@@ -81,7 +81,7 @@ Index ahashtable_find(KeyType key, AddressHashTable table){
 }
 
 void ahashtable_insert(KeyType key, AddressHashTable table){
-    Index index = lhashtable_find(key, table);
+    Index index = ahashtable_find(key, table);
     if (table->items[index].info != infoUse) {
         table->items[index].info = infoUse;
         strcpy(&table->items[index].key, &key);
@@ -99,7 +99,7 @@ AddressHashTable ahashtable_rehash(AddressHashTable table){
     // 拷贝旧表的数据到新表
     for (int i = 0; i < oldCapacity; i++ ){
         if (oldItems[i].info == infoUse){
-            lhashtable_insert(oldItems[i].key, table);
+            ahashtable_insert(oldItems[i].key, table);
         }
     }
     free(oldItems);

@@ -7,8 +7,7 @@
 //
 
 #include <stdio.h>
-
-typedef int ValueType;
+#include "SortUtil.h"
 
 static int leftChild(int index){
     return 2 * index + 1;
@@ -39,9 +38,7 @@ void heapSort(ValueType array[],int size){
     }
     for (int j = size - 1; j > 0; j--) {
         //将最大堆最最大值取出，放置最后
-        ValueType tmp = array[0];
-        array[0] = array[j];
-        array[j] = tmp;
+        swapValues(&array[0], &array[j]);
         //取出后需要执行空穴下置
         rebuidHeap(array, j, 0);
     }

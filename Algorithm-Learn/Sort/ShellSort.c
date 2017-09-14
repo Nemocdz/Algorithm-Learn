@@ -7,8 +7,7 @@
 //
 
 #include <stdio.h>
-
-typedef int ValueType;
+#include "SortUtil.h"
 
 //下界是O(n*log2n)，和增量间隔选择有关
 void shellSort(ValueType array[],int size){

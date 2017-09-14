@@ -8,7 +8,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-typedef int ValueType;
+#include "SortUtil.h"
 
 static void merge(ValueType array[], ValueType tmp[], int left, int mid, int right){
     int tmpIndex = left;
