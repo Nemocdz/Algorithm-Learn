@@ -18,6 +18,7 @@
 		DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CAD1F61824A001B08AF /* Stack-Array.c */; };
 		DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB01F61877E001B08AF /* Queue-ListNode.c */; };
 		DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB41F61910C001B08AF /* Queue-Array.c */; };
+		DA44FC391F737EC800131218 /* Trie.c in Sources */ = {isa = PBXBuildFile; fileRef = DA44FC371F737EC800131218 /* Trie.c */; };
 		DA58355A1F6A26F200F3B7FC /* QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA5835591F6A26F200F3B7FC /* QuickSort.c */; };
 		DA58355E1F6A2F0000F3B7FC /* SortUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = DA58355C1F6A2F0000F3B7FC /* SortUtil.c */; };
 		DA5835601F6A3F5200F3B7FC /* BucketSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA58355F1F6A3F5200F3B7FC /* BucketSort.c */; };
@@ -61,6 +62,8 @@
 		DA282CB11F61877E001B08AF /* Queue-ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-ListNode.h"; sourceTree = "<group>"; };
 		DA282CB41F61910C001B08AF /* Queue-Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Queue-Array.c"; sourceTree = "<group>"; };
 		DA282CB51F61910C001B08AF /* Queue-Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-Array.h"; sourceTree = "<group>"; };
+		DA44FC371F737EC800131218 /* Trie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Trie.c; sourceTree = "<group>"; };
+		DA44FC381F737EC800131218 /* Trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
 		DA5835591F6A26F200F3B7FC /* QuickSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = QuickSort.c; sourceTree = "<group>"; };
 		DA58355C1F6A2F0000F3B7FC /* SortUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SortUtil.c; sourceTree = "<group>"; };
 		DA58355D1F6A2F0000F3B7FC /* SortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortUtil.h; sourceTree = "<group>"; };
@@ -161,6 +164,8 @@
 				DA7548861F63C396004DEFC5 /* SearchTree.c */,
 				DA75488B1F6407CF004DEFC5 /* AVLTree.h */,
 				DA75488A1F6407CF004DEFC5 /* AVLTree.c */,
+				DA44FC381F737EC800131218 /* Trie.h */,
+				DA44FC371F737EC800131218 /* Trie.c */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */,
 				DA58355A1F6A26F200F3B7FC /* QuickSort.c in Sources */,
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,
+				DA44FC391F737EC800131218 /* Trie.c in Sources */,
 				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
 				DA282CA41F617388001B08AF /* Stack-ListNode.c in Sources */,
 				DA58355E1F6A2F0000F3B7FC /* SortUtil.c in Sources */,
