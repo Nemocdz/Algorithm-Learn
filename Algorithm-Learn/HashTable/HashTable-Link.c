@@ -9,7 +9,8 @@
 #include "HashTable-Link.h"
 
 struct ListNode {
-    KeyType value;
+    KeyType key;
+    ValueType value;
     ListNode *next;
 };
 
@@ -69,23 +70,27 @@ void lhashtable_makeEmpty(LinkHashTable table){
 ListNode *lhashtable_find(KeyType key, LinkHashTable table){
     ListNode *list = table->list[hash(&key, table->capacity)];
     ListNode *node = list->next;
-    while (node != NULL && strcmp(&node->value, &key)) {
+    while (node != NULL && strcmp(&node->key, &key)) {
         node = node->next;
     }
     return node;
 }
 
-void lhashtable_insert(KeyType key, LinkHashTable table){
+void lhashtable_insert(KeyType key,ValueType value, LinkHashTable table){
     ListNode *node = lhashtable_find(key, table);
     if (node == NULL) {
         ListNode *new = malloc(sizeof(ListNode *));
-        new->value = key;
+        new->key = key;
+        new->value = value;
         ListNode *list = table->list[hash(&key, table->capacity)];
         new->next = list->next;
         list->next = new;
     }
+    else{
+        node->value = value;
+    }
 }
 
-KeyType lhashtable_retrieve(ListNode *p){
+ValueType lhashtable_retrieve(ListNode *p){
     return p->value;
 }

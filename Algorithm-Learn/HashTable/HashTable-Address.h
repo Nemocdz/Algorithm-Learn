@@ -17,12 +17,13 @@
 typedef struct AddressHashTable* AddressHashTable;
 typedef char KeyType;
 typedef unsigned int Index;
+typedef int ValueType;
 
 AddressHashTable ahashtable_create(int maxCapacity);
 void ahashtable_makeEmpty(AddressHashTable table);
 Index ahashtable_find(KeyType key, AddressHashTable table);
-void ahashtable_insert(KeyType key, AddressHashTable table);
-KeyType ahashtable_retrieve(Index i, AddressHashTable table);
+void ahashtable_insert(KeyType key, ValueType value, AddressHashTable table);
+ValueType ahashtable_retrieve(Index i, AddressHashTable table);
 AddressHashTable ahashtable_rehash(AddressHashTable table);
 
 

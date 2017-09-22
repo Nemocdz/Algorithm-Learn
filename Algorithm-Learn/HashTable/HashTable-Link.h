@@ -20,7 +20,7 @@ typedef char KeyType;
 LinkHashTable lhashtable_create(int maxCapacity);
 void lhashtable_makeEmpty(LinkHashTable table);
 ListNode *lhashtable_find(KeyType key, LinkHashTable table);
-void lhashtable_insert(KeyType key, LinkHashTable table);
-KeyType lhashtable_retrieve(ListNode *p);
+void lhashtable_insert(KeyType key, ValueType value , LinkHashTable table);
+ValueType lhashtable_retrieve(ListNode *p);
 
 #endif /* HashTable_Link_h */

@@ -16,6 +16,7 @@ typedef enum InfoType {
 
 typedef struct HashItem {
     KeyType key;
+    ValueType value;
     InfoType info;
 } HashItem;
 
@@ -80,16 +81,20 @@ Index ahashtable_find(KeyType key, AddressHashTable table){
     return current;
 }
 
-void ahashtable_insert(KeyType key, AddressHashTable table){
+void ahashtable_insert(KeyType key, ValueType value, AddressHashTable table){
     Index index = ahashtable_find(key, table);
     if (table->items[index].info != infoUse) {
         table->items[index].info = infoUse;
         strcpy(&table->items[index].key, &key);
+        table->items[index].value = value;
+    }
+    else{
+        table->items[index].value = value;
     }
 }
 
-KeyType ahashtable_retrieve(Index i, AddressHashTable table){
-    return table->items[i].key;
+ValueType ahashtable_retrieve(Index i, AddressHashTable table){
+    return table->items[i].value;
 }
 
 AddressHashTable ahashtable_rehash(AddressHashTable table){
@@ -99,7 +104,7 @@ AddressHashTable ahashtable_rehash(AddressHashTable table){
     // 拷贝旧表的数据到新表
     for (int i = 0; i < oldCapacity; i++ ){
         if (oldItems[i].info == infoUse){
-            ahashtable_insert(oldItems[i].key, table);
+            ahashtable_insert(oldItems[i].key,oldItems[i].value,table);
         }
     }
     free(oldItems);
