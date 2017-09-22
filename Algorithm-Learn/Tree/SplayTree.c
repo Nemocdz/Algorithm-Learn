@@ -14,14 +14,14 @@ struct TreeNode{
     SplayTree right;
 };
 
-static SplayTree SplayNode = NULL;
+static SplayTree NullSplayTree = NULL;
 
 static SplayTree splay_init(){
-    if (SplayNode == NULL) {
-        SplayNode = malloc(sizeof(SplayTree));
-        SplayNode->left = SplayNode->right = SplayNode;
+    if (NullSplayTree == NULL) {
+        NullSplayTree = malloc(sizeof(SplayTree));
+        NullSplayTree->left = NullSplayTree->right = NullSplayTree;
     }
-    return SplayNode;
+    return NullSplayTree;
 }
 
 
@@ -53,10 +53,10 @@ static TreeNode* right_left_rotate(TreeNode *p){
 static TreeNode* splaytree_splay(ValueType x, TreeNode *node){
     splay_init();
     TreeNode head;
-    head.left = head.right = SplayNode;
+    head.left = head.right = NullSplayTree;
     SplayTree leftTreeMax = &head;
     SplayTree rightTreeMin = &head;
-    SplayNode->value = x;
+    NullSplayTree->value = x;
     //查找x
     while (x != node->value) {
         if (x < node->value) {
@@ -66,7 +66,7 @@ static TreeNode* splaytree_splay(ValueType x, TreeNode *node){
                 node = left_rotate(node);
             }
             //找到NULL就停下
-            if (node->left == SplayNode) {
+            if (node->left == NullSplayTree) {
                 break;
             }
             //此时旋转完后，将最右树的左子树接上旋转后的根节点，也就是原来的中间树
@@ -83,7 +83,7 @@ static TreeNode* splaytree_splay(ValueType x, TreeNode *node){
                 node = right_rotate(node);
             }
             //找到NULL就停止
-            if (node->right == SplayNode) {
+            if (node->right == NullSplayTree) {
                 break;
             }
             leftTreeMax->right = node;
@@ -125,7 +125,7 @@ SplayTree splaytree_insert(ValueType x,SplayTree tree){
         newNode = malloc(sizeof(SplayTree));
     }
     newNode->value = x;
-    if (tree == SplayNode) {
+    if (tree == NullSplayTree) {
         newNode->left = newNode->right = NULL;
         tree = newNode;
     }
@@ -139,7 +139,7 @@ SplayTree splaytree_insert(ValueType x,SplayTree tree){
             //把树放入插入点的右边
             newNode->right = tree;
             //左边置空
-            tree->left = SplayNode;
+            tree->left = NullSplayTree;
             tree = newNode;
         }
         else if (tree->value < x){
@@ -148,7 +148,7 @@ SplayTree splaytree_insert(ValueType x,SplayTree tree){
             //把树放入如插入点的左边
             newNode->left = tree;
             //右边置空
-            tree->right = SplayNode;
+            tree->right = NullSplayTree;
             tree = newNode;
         }
         else{
@@ -161,13 +161,13 @@ SplayTree splaytree_insert(ValueType x,SplayTree tree){
 
 SplayTree splaytree_delete(ValueType x,SplayTree tree){
     SplayTree newTree;
-    if (tree != SplayNode) {
+    if (tree != NullSplayTree) {
         //先伸展
         tree = splaytree_splay(x, tree);
         //找到需要删除的值
         if (x == tree->value) {
             //如果无左树
-            if (tree->left == SplayNode) {
+            if (tree->left == NullSplayTree) {
                 //直接取整个右子树
                 newTree = tree->right;
             }

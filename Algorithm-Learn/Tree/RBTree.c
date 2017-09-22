@@ -20,19 +20,21 @@ struct TreeNode{
     ColorType color;
 };
 
-static RBTree RBTreeNode = NULL;
+static RBTree NullRBTree = NULL;
+static const int RBTreeValueMax = 1000;
+static const int RBTreeValueMin = -1;
 
 static RBTree rbtree_init(){
-    if (RBTreeNode == NULL) {
-        RBTreeNode = malloc(sizeof(RBTree));
-        RBTreeNode->left = RBTreeNode->right = RBTreeNode;
-        RBTreeNode->color = Black;
-        RBTreeNode->value = 10000;
+    if (NullRBTree == NULL) {
+        NullRBTree = malloc(sizeof(RBTree));
+        NullRBTree->left = NullRBTree->right = NullRBTree;
+        NullRBTree->color = Black;
+        NullRBTree->value = RBTreeValueMax;
     }
     
     RBTree tree = malloc(sizeof(RBTree));
-    tree->value = -1;
-    tree->left = tree->right = RBTreeNode;
+    tree->value = RBTreeValueMin;
+    tree->left = tree->right = NullRBTree;
     tree->color = Black;
     return tree;
 }
@@ -80,9 +82,10 @@ static void handleReorient(ValueType x, RBTree tree){
 }
 
 RBTree rbtree_insert(ValueType x,RBTree tree){
+    rbtree_init();
     //太复杂了，有空再研究
     temp = parrent = grandgrandpa = tree;
-    RBTreeNode->value = x;
+    NullRBTree->value = x;
     while (temp->value != x) {
         grandgrandpa = grandpa;
         grandpa = parrent;
@@ -99,13 +102,13 @@ RBTree rbtree_insert(ValueType x,RBTree tree){
         }
     }
     
-    if (temp != RBTreeNode) {
-        return RBTreeNode;
+    if (temp != NullRBTree) {
+        return NullRBTree;
     }
     
     temp = malloc(sizeof(RBTree));
     temp->value = x;
-    temp->left = temp->right = RBTreeNode;
+    temp->left = temp->right = NullRBTree;
     
     if (x < parrent->value) {
         parrent->left = temp;

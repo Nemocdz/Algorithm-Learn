@@ -22,6 +22,4 @@ SplayTree splaytree_insert(ValueType x,SplayTree tree);
 SplayTree splaytree_delete(ValueType x,SplayTree tree);
 ValueType splaytree_retrieve(TreeNode *p);
 
-
-
 #endif /* SplayTree_h */
