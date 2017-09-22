@@ -7,7 +7,6 @@
 //
 
 #include <stdio.h>
-#include "HashTable-Link.h"
 #include "SortUtil.h"
 
 void bucketSort(ValueType array[], int size, int max){
