@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA23CE4C1F74AFFA00B1563B /* SplayTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA23CE4A1F74AFFA00B1563B /* SplayTree.c */; };
 		DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CAF1F69181800C2E250 /* SelectionSort.c */; };
 		DA255CB31F6919F900C2E250 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB21F6919F900C2E250 /* BubbleSort.c */; };
 		DA255CB51F691C7000C2E250 /* HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB41F691C7000C2E250 /* HeapSort.c */; };
@@ -45,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DA23CE4A1F74AFFA00B1563B /* SplayTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SplayTree.c; sourceTree = "<group>"; };
+		DA23CE4B1F74AFFA00B1563B /* SplayTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplayTree.h; sourceTree = "<group>"; };
 		DA255CAF1F69181800C2E250 /* SelectionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelectionSort.c; sourceTree = "<group>"; };
 		DA255CB21F6919F900C2E250 /* BubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BubbleSort.c; sourceTree = "<group>"; };
 		DA255CB41F691C7000C2E250 /* HeapSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HeapSort.c; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 				DA7548861F63C396004DEFC5 /* SearchTree.c */,
 				DA75488B1F6407CF004DEFC5 /* AVLTree.h */,
 				DA75488A1F6407CF004DEFC5 /* AVLTree.c */,
+				DA23CE4B1F74AFFA00B1563B /* SplayTree.h */,
+				DA23CE4A1F74AFFA00B1563B /* SplayTree.c */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 				DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
+				DA23CE4C1F74AFFA00B1563B /* SplayTree.c in Sources */,
 				DA59BC8F1F6910FD0009FB0D /* ShellSort.c in Sources */,
 				DA255CB51F691C7000C2E250 /* HeapSort.c in Sources */,
 				DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */,
