@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA23CE4C1F74AFFA00B1563B /* SplayTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA23CE4A1F74AFFA00B1563B /* SplayTree.c */; };
 		DA23CE4F1F74F25800B1563B /* RBTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA23CE4D1F74F25800B1563B /* RBTree.c */; };
+		DA23CE521F75094800B1563B /* Treap.c in Sources */ = {isa = PBXBuildFile; fileRef = DA23CE501F75094800B1563B /* Treap.c */; };
 		DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CAF1F69181800C2E250 /* SelectionSort.c */; };
 		DA255CB31F6919F900C2E250 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB21F6919F900C2E250 /* BubbleSort.c */; };
 		DA255CB51F691C7000C2E250 /* HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB41F691C7000C2E250 /* HeapSort.c */; };
@@ -51,6 +52,8 @@
 		DA23CE4B1F74AFFA00B1563B /* SplayTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplayTree.h; sourceTree = "<group>"; };
 		DA23CE4D1F74F25800B1563B /* RBTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RBTree.c; sourceTree = "<group>"; };
 		DA23CE4E1F74F25800B1563B /* RBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTree.h; sourceTree = "<group>"; };
+		DA23CE501F75094800B1563B /* Treap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Treap.c; sourceTree = "<group>"; };
+		DA23CE511F75094800B1563B /* Treap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Treap.h; sourceTree = "<group>"; };
 		DA255CAF1F69181800C2E250 /* SelectionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelectionSort.c; sourceTree = "<group>"; };
 		DA255CB21F6919F900C2E250 /* BubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BubbleSort.c; sourceTree = "<group>"; };
 		DA255CB41F691C7000C2E250 /* HeapSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HeapSort.c; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				DA23CE4A1F74AFFA00B1563B /* SplayTree.c */,
 				DA23CE4E1F74F25800B1563B /* RBTree.h */,
 				DA23CE4D1F74F25800B1563B /* RBTree.c */,
+				DA23CE511F75094800B1563B /* Treap.h */,
+				DA23CE501F75094800B1563B /* Treap.c */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -311,6 +316,7 @@
 				DA9CA1011F690B8E0067C359 /* InsertionSort.c in Sources */,
 				DA282C981F616CD7001B08AF /* ListNode.c in Sources */,
 				DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */,
+				DA23CE521F75094800B1563B /* Treap.c in Sources */,
 				DA44FC3D1F738F3300131218 /* Huffman.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
