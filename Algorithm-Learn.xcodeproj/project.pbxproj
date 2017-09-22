@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA23CE4C1F74AFFA00B1563B /* SplayTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA23CE4A1F74AFFA00B1563B /* SplayTree.c */; };
+		DA23CE4F1F74F25800B1563B /* RBTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA23CE4D1F74F25800B1563B /* RBTree.c */; };
 		DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CAF1F69181800C2E250 /* SelectionSort.c */; };
 		DA255CB31F6919F900C2E250 /* BubbleSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB21F6919F900C2E250 /* BubbleSort.c */; };
 		DA255CB51F691C7000C2E250 /* HeapSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA255CB41F691C7000C2E250 /* HeapSort.c */; };
@@ -48,6 +49,8 @@
 /* Begin PBXFileReference section */
 		DA23CE4A1F74AFFA00B1563B /* SplayTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SplayTree.c; sourceTree = "<group>"; };
 		DA23CE4B1F74AFFA00B1563B /* SplayTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplayTree.h; sourceTree = "<group>"; };
+		DA23CE4D1F74F25800B1563B /* RBTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = RBTree.c; sourceTree = "<group>"; };
+		DA23CE4E1F74F25800B1563B /* RBTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RBTree.h; sourceTree = "<group>"; };
 		DA255CAF1F69181800C2E250 /* SelectionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SelectionSort.c; sourceTree = "<group>"; };
 		DA255CB21F6919F900C2E250 /* BubbleSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BubbleSort.c; sourceTree = "<group>"; };
 		DA255CB41F691C7000C2E250 /* HeapSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = HeapSort.c; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				DA75488A1F6407CF004DEFC5 /* AVLTree.c */,
 				DA23CE4B1F74AFFA00B1563B /* SplayTree.h */,
 				DA23CE4A1F74AFFA00B1563B /* SplayTree.c */,
+				DA23CE4E1F74F25800B1563B /* RBTree.h */,
+				DA23CE4D1F74F25800B1563B /* RBTree.c */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -302,6 +307,7 @@
 				DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */,
 				DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */,
 				DA5835601F6A3F5200F3B7FC /* BucketSort.c in Sources */,
+				DA23CE4F1F74F25800B1563B /* RBTree.c in Sources */,
 				DA9CA1011F690B8E0067C359 /* InsertionSort.c in Sources */,
 				DA282C981F616CD7001B08AF /* ListNode.c in Sources */,
 				DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */,
