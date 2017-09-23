@@ -33,6 +33,7 @@
 		DA7548931F6577EA004DEFC5 /* HashTable-Address.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548911F6577EA004DEFC5 /* HashTable-Address.c */; };
 		DA9CA1011F690B8E0067C359 /* InsertionSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA9CA1001F690B8E0067C359 /* InsertionSort.c */; };
 		DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */ = {isa = PBXBuildFile; fileRef = DAA61E631F67DC2300431A3A /* BinaryHeap.c */; };
+		DAB2B0BC1F7525BE00ADDDB9 /* KMP.c in Sources */ = {isa = PBXBuildFile; fileRef = DAB2B0BA1F7525BE00ADDDB9 /* KMP.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +93,8 @@
 		DA9CA1001F690B8E0067C359 /* InsertionSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = InsertionSort.c; path = "Algorithm-Learn/Sort/InsertionSort.c"; sourceTree = SOURCE_ROOT; };
 		DAA61E631F67DC2300431A3A /* BinaryHeap.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = BinaryHeap.c; path = "Algorithm-Learn/Heap/BinaryHeap.c"; sourceTree = SOURCE_ROOT; };
 		DAA61E641F67DC2300431A3A /* BinaryHeap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BinaryHeap.h; path = "Algorithm-Learn/Heap/BinaryHeap.h"; sourceTree = SOURCE_ROOT; };
+		DAB2B0BA1F7525BE00ADDDB9 /* KMP.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = KMP.c; sourceTree = "<group>"; };
+		DAB2B0BB1F7525BE00ADDDB9 /* KMP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KMP.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 				DA44FC371F737EC800131218 /* Trie.c */,
 				DA44FC3C1F738F3300131218 /* Huffman.h */,
 				DA44FC3B1F738F3300131218 /* Huffman.c */,
+				DAB2B0BB1F7525BE00ADDDB9 /* KMP.h */,
+				DAB2B0BA1F7525BE00ADDDB9 /* KMP.c */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */,
 				DA255CB31F6919F900C2E250 /* BubbleSort.c in Sources */,
 				DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */,
+				DAB2B0BC1F7525BE00ADDDB9 /* KMP.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
 				DA23CE4C1F74AFFA00B1563B /* SplayTree.c in Sources */,
