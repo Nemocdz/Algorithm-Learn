@@ -21,6 +21,9 @@
 		DA282CAF1F61824A001B08AF /* Stack-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CAD1F61824A001B08AF /* Stack-Array.c */; };
 		DA282CB21F61877E001B08AF /* Queue-ListNode.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB01F61877E001B08AF /* Queue-ListNode.c */; };
 		DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */ = {isa = PBXBuildFile; fileRef = DA282CB41F61910C001B08AF /* Queue-Array.c */; };
+		DA36F4B41F7CC32A0018000E /* 13-RobotMove.c in Sources */ = {isa = PBXBuildFile; fileRef = DA36F4B31F7CC32A0018000E /* 13-RobotMove.c */; };
+		DA36F4B61F7CC7BB0018000E /* 14-CuttingRope.c in Sources */ = {isa = PBXBuildFile; fileRef = DA36F4B51F7CC7BB0018000E /* 14-CuttingRope.c */; };
+		DA36F4B81F7CD5BE0018000E /* 15-NumberOfOneInBinary.c in Sources */ = {isa = PBXBuildFile; fileRef = DA36F4B71F7CD5BE0018000E /* 15-NumberOfOneInBinary.c */; };
 		DA44FC391F737EC800131218 /* Trie.c in Sources */ = {isa = PBXBuildFile; fileRef = DA44FC371F737EC800131218 /* Trie.c */; };
 		DA44FC3D1F738F3300131218 /* Huffman.c in Sources */ = {isa = PBXBuildFile; fileRef = DA44FC3B1F738F3300131218 /* Huffman.c */; };
 		DA58355A1F6A26F200F3B7FC /* QuickSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA5835591F6A26F200F3B7FC /* QuickSort.c */; };
@@ -82,6 +85,9 @@
 		DA282CB11F61877E001B08AF /* Queue-ListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-ListNode.h"; sourceTree = "<group>"; };
 		DA282CB41F61910C001B08AF /* Queue-Array.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "Queue-Array.c"; sourceTree = "<group>"; };
 		DA282CB51F61910C001B08AF /* Queue-Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Queue-Array.h"; sourceTree = "<group>"; };
+		DA36F4B31F7CC32A0018000E /* 13-RobotMove.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "13-RobotMove.c"; sourceTree = "<group>"; };
+		DA36F4B51F7CC7BB0018000E /* 14-CuttingRope.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "14-CuttingRope.c"; sourceTree = "<group>"; };
+		DA36F4B71F7CD5BE0018000E /* 15-NumberOfOneInBinary.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "15-NumberOfOneInBinary.c"; sourceTree = "<group>"; };
 		DA44FC371F737EC800131218 /* Trie.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Trie.c; sourceTree = "<group>"; };
 		DA44FC381F737EC800131218 /* Trie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Trie.h; sourceTree = "<group>"; };
 		DA44FC3B1F738F3300131218 /* Huffman.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Huffman.c; sourceTree = "<group>"; };
@@ -153,8 +159,8 @@
 				DA7548891F63C3A1004DEFC5 /* Tree */,
 				DA282CB31F6190F1001B08AF /* Queue */,
 				DA7548901F652EE9004DEFC5 /* HashTable */,
-				DAA61E661F67DC2700431A3A /* Heap */,
 				DA9CA1021F690B9E0067C359 /* Sort */,
+				DAA61E661F67DC2700431A3A /* Heap */,
 			);
 			path = "Algorithm-Learn";
 			sourceTree = "<group>";
@@ -245,6 +251,9 @@
 				DA9354DA1F77D57100C208E8 /* 9-QueueWithTwoStack.c */,
 				DA9354DC1F77D94500C208E8 /* 10-Fibonacci.c */,
 				DA9354DE1F77DAD100C208E8 /* 11-MinNumberInRotatedArray.c */,
+				DA36F4B31F7CC32A0018000E /* 13-RobotMove.c */,
+				DA36F4B51F7CC7BB0018000E /* 14-CuttingRope.c */,
+				DA36F4B71F7CD5BE0018000E /* 15-NumberOfOneInBinary.c */,
 			);
 			path = CodingInterviews;
 			sourceTree = "<group>";
@@ -339,6 +348,7 @@
 				DAB2B0BC1F7525BE00ADDDB9 /* KMP.c in Sources */,
 				DA282C971F616CD7001B08AF /* DoubleListNode.c in Sources */,
 				DA9354D71F77A06700C208E8 /* 7-ConstructBinaryTree.c in Sources */,
+				DA36F4B41F7CC32A0018000E /* 13-RobotMove.c in Sources */,
 				DA282C8D1F616CBB001B08AF /* main.c in Sources */,
 				DA23CE4C1F74AFFA00B1563B /* SplayTree.c in Sources */,
 				DA59BC8F1F6910FD0009FB0D /* ShellSort.c in Sources */,
@@ -348,6 +358,7 @@
 				DA255CB11F69181800C2E250 /* SelectionSort.c in Sources */,
 				DA58355A1F6A26F200F3B7FC /* QuickSort.c in Sources */,
 				DA282CB61F61910C001B08AF /* Queue-Array.c in Sources */,
+				DA36F4B81F7CD5BE0018000E /* 15-NumberOfOneInBinary.c in Sources */,
 				DA44FC391F737EC800131218 /* Trie.c in Sources */,
 				DA9354DD1F77D94500C208E8 /* 10-Fibonacci.c in Sources */,
 				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
@@ -356,6 +367,7 @@
 				DA9354D31F7792AB00C208E8 /* 5-ReplaceBlanks.c in Sources */,
 				DA9354DB1F77D57100C208E8 /* 9-QueueWithTwoStack.c in Sources */,
 				DA9354D11F778A1A00C208E8 /* 4-FindInPartiallySortedMatrix.c in Sources */,
+				DA36F4B61F7CC7BB0018000E /* 14-CuttingRope.c in Sources */,
 				DA255CB71F69290B00C2E250 /* MergeSort.c in Sources */,
 				DAA61E651F67DC2300431A3A /* BinaryHeap.c in Sources */,
 				DA9354DF1F77DAD100C208E8 /* 11-MinNumberInRotatedArray.c in Sources */,
