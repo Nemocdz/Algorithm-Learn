@@ -10,7 +10,7 @@
 #include "SortUtil.h"
 
 //下界是O(n*log2n)，和增量间隔选择有关
-void shellSort(ValueType array[],int size){
+static void shellSort(ValueType array[],int size){
     //先选一个增量间隔，一开始是size一半，增量每次变成一半（可改进）
     for (int increment = size/2; increment > 0; increment /= 2) {
         for (int i = increment; i < size; i++) {

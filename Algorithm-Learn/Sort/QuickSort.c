@@ -62,6 +62,6 @@ static void quickSort_internal(ValueType array[], int left, int right){
     }
 }
 
-void quickSort(ValueType array[], int size){
+static void quickSort(ValueType array[], int size){
     quickSort_internal(array, 0, size - 1);
 }

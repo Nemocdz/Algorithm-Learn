@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "SortUtil.h"
 
-void selectionSort(ValueType array[],int size){
+static void selectionSort(ValueType array[],int size){
     for (int i = 0; i < size; i++) {
         int min = i;
         //找到之后最小的一个

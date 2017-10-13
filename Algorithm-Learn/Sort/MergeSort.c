@@ -53,7 +53,7 @@ static void mergeSort_internal(ValueType array[], ValueType tmpArray[], int left
 }
 
 
-void mergeSort(ValueType array[], int size){
+static void mergeSort(ValueType array[], int size){
     ValueType *tmpArray = malloc(sizeof(ValueType) * size);
     mergeSort_internal(array, tmpArray, 0, size - 1);
 }

@@ -31,7 +31,7 @@ static void rebuidHeap(ValueType array[],int size, int index){
     array[index] = tmp;
 }
 
-void heapSort(ValueType array[],int size){
+static void heapSort(ValueType array[],int size){
     for (int i = size / 2; i >= 0; i--) {
         //一开始建立一个最大堆
         rebuidHeap(array, size, i);

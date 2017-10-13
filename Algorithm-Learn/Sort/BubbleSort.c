@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "SortUtil.h"
 
-void bubbleSort(ValueType array[],int size){
+static void bubbleSort(ValueType array[],int size){
     for (int i = 0; i < size - 1; i++) {
         //每次循环后i个是最大的，所以不用循环到size-1
         for (int j = 0; j < size - 1 - i; j++) {

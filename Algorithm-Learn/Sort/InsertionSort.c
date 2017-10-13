@@ -9,8 +9,7 @@
 #include <stdio.h>
 #include "SortUtil.h"
 
-
-void insertionSort(ValueType array[],int size){
+static void insertionSort(ValueType array[],int size){
     ValueType tmp;
     //第一个元素前面没有元素，不需要比较，所以下标从1开始
     for (int i = 1; i < size; i++) {

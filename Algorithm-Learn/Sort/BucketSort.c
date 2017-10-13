@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include "SortUtil.h"
 
-void bucketSort(ValueType array[], int size, int max){
+static void bucketSort(ValueType array[], int size, int max){
     int hash[max];
     //初始化为0，代表数字出现次数
     for (int i = 0; i < max; i++) {
