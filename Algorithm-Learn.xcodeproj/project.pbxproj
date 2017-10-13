@@ -30,6 +30,7 @@
 		DA58355E1F6A2F0000F3B7FC /* SortUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = DA58355C1F6A2F0000F3B7FC /* SortUtil.c */; };
 		DA5835601F6A3F5200F3B7FC /* BucketSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA58355F1F6A3F5200F3B7FC /* BucketSort.c */; };
 		DA59BC8F1F6910FD0009FB0D /* ShellSort.c in Sources */ = {isa = PBXBuildFile; fileRef = DA59BC8E1F6910FD0009FB0D /* ShellSort.c */; };
+		DA61BC191F90F61A00C9BE5D /* 16-Power.c in Sources */ = {isa = PBXBuildFile; fileRef = DA61BC181F90F61A00C9BE5D /* 16-Power.c */; };
 		DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA7548861F63C396004DEFC5 /* SearchTree.c */; };
 		DA75488C1F6407CF004DEFC5 /* AVLTree.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488A1F6407CF004DEFC5 /* AVLTree.c */; };
 		DA75488F1F652EC2004DEFC5 /* HashTable-Link.c in Sources */ = {isa = PBXBuildFile; fileRef = DA75488D1F652EC2004DEFC5 /* HashTable-Link.c */; };
@@ -97,6 +98,7 @@
 		DA58355D1F6A2F0000F3B7FC /* SortUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortUtil.h; sourceTree = "<group>"; };
 		DA58355F1F6A3F5200F3B7FC /* BucketSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BucketSort.c; sourceTree = "<group>"; };
 		DA59BC8E1F6910FD0009FB0D /* ShellSort.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ShellSort.c; sourceTree = "<group>"; };
+		DA61BC181F90F61A00C9BE5D /* 16-Power.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "16-Power.c"; sourceTree = "<group>"; };
 		DA7548861F63C396004DEFC5 /* SearchTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = SearchTree.c; path = "Algorithm-Learn/Tree/SearchTree.c"; sourceTree = SOURCE_ROOT; };
 		DA7548871F63C396004DEFC5 /* SearchTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SearchTree.h; path = "Algorithm-Learn/Tree/SearchTree.h"; sourceTree = SOURCE_ROOT; };
 		DA75488A1F6407CF004DEFC5 /* AVLTree.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = AVLTree.c; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 				DA36F4B31F7CC32A0018000E /* 13-RobotMove.c */,
 				DA36F4B51F7CC7BB0018000E /* 14-CuttingRope.c */,
 				DA36F4B71F7CD5BE0018000E /* 15-NumberOfOneInBinary.c */,
+				DA61BC181F90F61A00C9BE5D /* 16-Power.c */,
 			);
 			path = CodingInterviews;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				DA36F4B81F7CD5BE0018000E /* 15-NumberOfOneInBinary.c in Sources */,
 				DA44FC391F737EC800131218 /* Trie.c in Sources */,
 				DA9354DD1F77D94500C208E8 /* 10-Fibonacci.c in Sources */,
+				DA61BC191F90F61A00C9BE5D /* 16-Power.c in Sources */,
 				DA7548881F63C396004DEFC5 /* SearchTree.c in Sources */,
 				DA282CA41F617388001B08AF /* Stack-ListNode.c in Sources */,
 				DA58355E1F6A2F0000F3B7FC /* SortUtil.c in Sources */,
